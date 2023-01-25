@@ -1,0 +1,36 @@
+<div class="sidbar-contaner">
+    <div class="sidebar-content">
+        <a routerLink='home' class="side-menu-item">Home</a>
+        <a  routerLink="profile" class="side-menu-item">My Profile</a>
+        
+        <a >
+    <button
+        type="button"
+        class="sidebar-collapse-button"
+        (click)="isCollapsed = ! isCollapsed"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample"
+    >
+    My Vacancy 
+    </button>
+    <span class="caret"></span>
+</a>
+    
+<div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+    <div class="submenu-contaiener">
+        <a  class="side-sub-menu-item">Angular Developer</a>
+        <a  class="side-sub-menu-item">React Developer</a>
+        <a  class="side-sub-menu-item">Node Developer</a>
+    </div>
+
+</div>
+        
+        <a  class="side-menu-item">Message</a>
+        <a class="side-menu-item">Subscription</a>
+        <a  class="side-menu-item">Notification</a>
+        <a  class="side-menu-item">Settings</a>
+    </div> 
+</div>
+
+
+

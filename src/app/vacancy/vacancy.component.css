@@ -1,0 +1,12 @@
+.vacancy-box-container{
+    border: 2px solid #5F4B8BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    margin: 10px;
+    height: 150px;
+}
+.span{
+    color: blueviolet;
+}
